@@ -1,6 +1,6 @@
-# 💡 Fault Detection in HITL Simulation of a Quadcopter Drone
+# 💡 Fault Detection in HITL per un Drone Quadricottero
 
-Questo progetto contiene il codice MATLAB e i modelli Simulink utilizzati per la generazione di dataset, estrazione di feature e classificazione di guasti all'interno di una simulazione Hardware-in-the-Loop (HITL) di un drone quadrirotore. Il sistema diagnostico è integrato nel controllore di volo e consente il rilevamento in tempo reale di anomalie basate su segnali provenienti dalla simulazione.
+Questo progetto contiene il codice MATLAB e i modelli Simulink utilizzati per la generazione di dataset, l’estrazione di feature e la classificazione di guasti all'interno di una simulazione Hardware-in-the-Loop (HITL) di un drone quadrirotore. L’obiettivo è simulare guasti nel sistema, estrarre feature diagnostiche dai segnali in tempo reale e utilizzare classificatori addestrati per il rilevamento automatico delle anomalie. Il sistema diagnostico è integrato nel controllore di volo e consente il monitoraggio continuo del comportamento del drone, con applicazioni orientate alla **manutenzione predittiva** e al **controllo tollerante ai guasti**.
 
 ## 📁 Struttura del repository
 
@@ -34,13 +34,19 @@ I file in `simulink/` comprendono:
 - `UAV_Dynamics.slx`: modello della dinamica del drone, aggiornato con **iniezione del guasto**.
 - `Quadcopter_ControllerWithNavigation.slx`: controllore aggiornato con **moduli diagnostici integrati** basati su classificatori.
 
-## 🧪 Obiettivo del progetto
-
-Simulare guasti in un drone quadrirotore all'interno di un ambiente **Hardware-in-the-Loop**, estrarre feature diagnostiche dai segnali in tempo reale, e utilizzare classificatori addestrati per il **rilevamento automatico di guasti**. Il progetto è orientato verso scenari di **manutenzione predittiva** e **controllo tollerante ai guasti**.
-
 ## 🧰 Requisiti
 
 - MATLAB (con Signal Processing, Statistics & Machine Learning Toolbox)
 - Simulink
 - Diagnostic Feature Designer
 - Classification Learner App
+
+
+## 👥 Autori
+
+|Nome | GitHub |
+|-----------|--------|
+| 👨 `Balducci Davide` | [Click here](https://github.com/Davide-Balducci) |
+| 👨 `Camplese Francesco` | [Click here](https://github.com/FrancescoCamplese00) |
+| 👨 `De Ritis Riccardo` | [Click here](https://github.com/RiccardoDR) |
+| 👨 `Iasenzaniro Andrea` | [Click here](https://github.com/AndreaIasenzaniro) |
